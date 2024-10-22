@@ -16,9 +16,9 @@ provider "hcloud" {
   token = var.hcloud_token
 }
 
-resource "hcloud_server" "node" {
-  name        = "test"
-  image       = "debian-12"
+resource "hcloud_server" "scific" {
+  name        = "scific-test"
+  image       = var.vps_image
   server_type = var.vps_type
   location    = var.vps_location
   public_net {
