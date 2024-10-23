@@ -9,7 +9,7 @@
 #   - hil  (Hillsboro, Oregon)
 # Singapore:
 #   - sin  (Singapore)
-variable "vps_location" {
+variable "hetzner_location" {
   description = "Location in Hetzner Cloud"
   type = string
   default = "fsn1"
@@ -24,7 +24,7 @@ variable "vps_location" {
 # hil-dc1     Hillsboro virtual DC 1        us-west
 # sin-dc1     Singapore virtual DC 1        ap-southeast
 # ---------   ---------------------------   ------------
-variable "vps_datacenter" {
+variable "hetzner_datacenter" {
   description = "Datacenter in Hetzner Cloud"
   type = string
   default = "fsn1-dc14"
@@ -42,7 +42,7 @@ variable "vps_datacenter" {
 # CX52    Shared (Intel)    16     32         320            38.56
 # CPX51   Shared (AMD)      16     32         360            65.33
 # -----   --------------   ----   --------   --------   ---------------
-variable "vps_type" {
+variable "hetzner_vps_type" {
   description = "VPS type on Hetzner Cloud"
   type = string
   default = "cx22"
@@ -59,7 +59,7 @@ variable "vps_type" {
 # alma-8            AlmaLinux 8        x86
 # alma-9            AlmaLinux 9        x86
 # ---------------   ---------------  ------------
-variable "vps_image" {
+variable "hetzner_image" {
   description = "OS image for VPS"
   type = string
   default = "debian-11"
