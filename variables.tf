@@ -30,18 +30,20 @@ variable "hetzner_datacenter" {
   default = "fsn1-dc14"
 }
 
-# Name    Type             VCPU   RAM (GB)   SSD (GB)   Price (€/month)
-# -----   --------------   ----   --------   --------   ---------------
-# CX22    Shared (Intel)     2      4          40             4.51
-# CPX11   Shared (AMD)       2      2          40             5.18
-# CX32    Shared (Intel)     4      8          80             8.09
-# CPX21   Shared (AMD)       3      4          80             8.98
-# CPX31   Shared (AMD)       4      8         160            16.18
-# CX42    Shared (Intel)     8     16         160            19.52
-# CPX41   Shared (AMD)       8     16         240            29.99
-# CX52    Shared (Intel)    16     32         320            38.56
-# CPX51   Shared (AMD)      16     32         360            65.33
-# -----   --------------   ----   --------   --------   ---------------
+# Name     Type              VCPU   RAM (GB)   SSD (GB)   Price (€/month)
+# ------   ---------------   ----   --------   --------   ---------------
+# ? CX11   Shared (Intel?)     1      2          20             3.29    ?
+# CX22     Shared (Intel)      2      4          40             4.51
+# CX32     Shared (Intel)      4      8          80             8.09
+# CX42     Shared (Intel)      8     16         160            19.52
+# CX52     Shared (Intel)     16     32         320            38.56
+# ------   ---------------   ----   --------   --------   ---------------
+# CPX11    Shared (AMD)        2      2          40             5.18
+# CPX21    Shared (AMD)        3      4          80             8.98
+# CPX31    Shared (AMD)        4      8         160            16.18
+# CPX41    Shared (AMD)        8     16         240            29.99
+# CPX51    Shared (AMD)       16     32         360            65.33
+# ------   ---------------   ----   --------   --------   ---------------
 variable "hetzner_vps_type" {
   description = "VPS type on Hetzner Cloud"
   type = string
@@ -52,8 +54,12 @@ variable "hetzner_vps_type" {
 # ---------------   ---------------  ------------
 # ubuntu-20.04      Ubuntu 20.04       x86, arm
 # ubuntu-22.04      Ubuntu 22.04       x86, arm
+# ?                 Ubuntu 24.04                ?
 # debian-11         Debian 11          x86, arm
+# ?                 Debian 12                   ?
 # centos-stream-9   CentOS Stream 9    x86, arm
+# ?                 Fedora 39                   ?
+# ?                 Fedora 40                   ?
 # rocky-8           Rocky Linux 8      x86, arm
 # rocky-9           Rocky Linux 9      x86, arm
 # alma-8            AlmaLinux 8        x86
