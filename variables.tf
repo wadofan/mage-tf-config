@@ -1,3 +1,7 @@
+variable "hcloud_token" {
+  type = string
+  sensitive = true
+}
 
 # Germany:
 #   - nbg1 (Nuremberg)
@@ -70,3 +74,4 @@ variable "hetzner_image" {
   type = string
   default = "debian-11"
 }
+
