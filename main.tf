@@ -16,8 +16,10 @@ resource "hcloud_server" "scific" {
   image       = var.hetzner_image
   server_type = var.hetzner_vps_type
   location    = var.hetzner_location
+  ssh_keys    = [ var.primary_ssh_key ] 
   public_net {
     ipv4_enabled = true
     ipv6_enabled = true
   }
 }
+

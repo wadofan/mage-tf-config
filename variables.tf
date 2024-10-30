@@ -3,6 +3,10 @@ variable "hcloud_token" {
   sensitive = true
 }
 
+variable "primary_ssh_key" {
+  type = string
+}
+
 # Germany:
 #   - nbg1 (Nuremberg)
 #   - fsn1 (Falkenstein)
