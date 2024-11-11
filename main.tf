@@ -11,8 +11,8 @@ provider "hcloud" {
   token = var.hcloud_token
 }
 
-resource "hcloud_server" "scific" {
-  name        = "scific-test"
+resource "hcloud_server" "mage" {
+  name        = "scific"
   image       = var.hetzner_image
   server_type = var.hetzner_vps_type
   location    = var.hetzner_location
@@ -22,4 +22,3 @@ resource "hcloud_server" "scific" {
     ipv6_enabled = true
   }
 }
-

@@ -1,12 +1,7 @@
 output "hetzner_vps_public_ip4_addr" {
-  value = hcloud_server.scific.ipv4_address
+  value = hcloud_server.mage.ipv4_address
 }
 
 output "hetzner_vps_public_ip6_addr" {
-  value = hcloud_server.scific.ipv6_address
+  value = hcloud_server.mage.ipv6_address
 }
-
-#output "hetzner_vps_ssh_keys" {
-#  value = hcloud_server.scific.ssh_keys
-#}
-

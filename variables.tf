@@ -78,4 +78,3 @@ variable "hetzner_image" {
   type = string
   default = "debian-11"
 }
-
