@@ -76,5 +76,5 @@ variable "hetzner_vps_type" {
 variable "hetzner_image" {
   description = "OS image for VPS"
   type = string
-  default = "debian-11"
+  default = "debian-12"
 }
