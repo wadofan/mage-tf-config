@@ -25,6 +25,7 @@ resource "null_resource" "run_ansible_playbook" {
   provisioner "local-exec" {
     working_dir = var.ansible_work_dir
     command = <<EOT
+sleep 30; \
 ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook \
 --inventory ${hcloud_server.mage.ipv4_address}, \
 --private-key ${var.ansible_ssh_key} \
