@@ -6,11 +6,13 @@ variable "ansible_work_dir" {
 variable "ansible_playbook_file" {
   description = "Name of the Ansible Playbook file"
   type = string
+  default = "playbook.yml"
 }
 
 variable "ansible_remote_user" {
   description = "Remote user name for Ansible to log in"
   type = string
+  default = "root"
 }
 
 variable "ansible_ssh_key" {
