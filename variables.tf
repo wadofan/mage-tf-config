@@ -40,7 +40,7 @@ variable "hetzner_datacenter" {
 
 # Name     Type              VCPU   RAM (GB)   SSD (GB)   Price (€/month)
 # ------   ---------------   ----   --------   --------   ---------------
-# ? CX11   Shared (Intel?)     1      2          20             3.29    ?
+# CX11     Shared (Intel)      1      2          20             3.29
 # CX22     Shared (Intel)      2      4          40             4.51
 # CX32     Shared (Intel)      4      8          80             8.09
 # CX42     Shared (Intel)      8     16         160            19.52
@@ -62,12 +62,12 @@ variable "hetzner_vps_type" {
 # ---------------   ---------------  ------------
 # ubuntu-20.04      Ubuntu 20.04       x86, arm
 # ubuntu-22.04      Ubuntu 22.04       x86, arm
-# ?                 Ubuntu 24.04                ?
+# ?                 Ubuntu 24.04          ?
 # debian-11         Debian 11          x86, arm
-# ?                 Debian 12                   ?
+# ?                 Debian 12             ?
 # centos-stream-9   CentOS Stream 9    x86, arm
-# ?                 Fedora 39                   ?
-# ?                 Fedora 40                   ?
+# ?                 Fedora 39             ?
+# ?                 Fedora 40             ?
 # rocky-8           Rocky Linux 8      x86, arm
 # rocky-9           Rocky Linux 9      x86, arm
 # alma-8            AlmaLinux 8        x86
